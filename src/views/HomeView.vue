@@ -12,7 +12,7 @@
       </v-row>
       <v-row>
         <v-col align-self="center" class="columns ma-lg-8 ma-sm-0 pa-0">
-          <v-img src="../assets/coderun.svg" max-height="70%" max-width="70%" style="object-position: center" ></v-img>
+		<v-img src="../assets/coderun.svg" aspect-ratio="8.136" max-height="70%" max-width="70%" style="object-position: center" ></v-img> <!-- Aspect ratio computed manally from SVG viewBox dimensions so it renders properly on all browsers -->
         </v-col>
       </v-row>
       <v-row>
@@ -114,7 +114,12 @@
 
     <v-row class="section-2 ma-0">
       <v-col class="font-ans ml-lg-4">
-        descriere mai micuta al carui scop imi este necunoscut momentan
+        descriere mai micuta al carui scop imi este necunoscut momenta Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.n
       </v-col>
     </v-row>
 
@@ -144,13 +149,16 @@ import footerComp from "@/components/footer-comp.vue";
     components: {
       NavBar,
       footerComp
-    },
+    }
   }
 </script>
 
 /*eslint-disable */
 
 <style>
+
+@import url('https://fonts.cdnfonts.com/css/radio-stars');
+@import url('https://fonts.cdnfonts.com/css/josefin-sans');
 
 .homepage-bg{
   background-image: url("../assets/fundal_2.png");
@@ -169,6 +177,11 @@ import footerComp from "@/components/footer-comp.vue";
 
 .section-2{
   background-color: #5bc5be;
+  justify-content: center;
+}
+
+.section-2 > .col {
+	max-width: 50rem;
 }
 
 .columns{
@@ -198,11 +211,12 @@ import footerComp from "@/components/footer-comp.vue";
   font-family: "radio stars";
   font-size: xx-large;
   color: #cd55a0;
+  color: #ea44c3;
 }
 
 .font-ans{
   font-family: "josefin sans";
-  font-size: xx-large;
+  /*font-size: xx-large;*/
   color:#ffffff;
 }
 
